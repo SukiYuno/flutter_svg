@@ -868,14 +868,16 @@ class _SvgPictureState extends State<SvgPicture> {
 
       double? width = widget.width;
       double? height = widget.height;
-      if (width == null && height == null) {
-        width = viewport.width;
-        height = viewport.height;
-      } else if (height != null) {
-        width = height / viewport.height * viewport.width;
-      } else if (width != null) {
-        height = width / viewport.width * viewport.height;
-      }
+      viewport.size.width = width
+      viewport.size.height = height
+//       if (width == null && height == null) {
+//         width = viewport.width;
+//         height = viewport.height;
+//       } else if (height != null) {
+//         width = height / viewport.height * viewport.width;
+//       } else if (width != null) {
+//         height = width / viewport.width * viewport.height;
+//       }
 
       child = SizedBox(
         width: width,
