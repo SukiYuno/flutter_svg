@@ -868,8 +868,8 @@ class _SvgPictureState extends State<SvgPicture> {
 
       double? width = widget.width;
       double? height = widget.height;
-      viewport.size.width = width
-      viewport.size.height = height
+      viewport.size.width = width;
+      viewport.size.height = height;
 //       if (width == null && height == null) {
 //         width = viewport.width;
 //         height = viewport.height;
